@@ -1,0 +1,56 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.Python
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ---- Dữ liệu ----
+# Không commit dữ liệu thô. Ghi nguồn tải trong data/README.md thay vì đẩy file lên.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/README.md
+
+# File dữ liệu nặng ở bất kỳ đâu
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+*.db
+*.sqlite3
+# Giữ lại file mẫu nhỏ nếu cần minh hoạ
+!**/sample_*.csv
+
+# ---- Mô hình đã huấn luyện ----
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# ---- Bí mật ----
+.env
+.env.*
+*.key
+credentials.json
+secrets.yaml
+
+# ---- IDE / hệ điều hành ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Kết quả tạm ----
+output/
+tmp/
+*.log
