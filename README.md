@@ -1,37 +1,24 @@
-# Nền tảng lập trình cho phân tích và trực quan dữ liệu
+# HCMUT Masters
 
-Ghi chú và bài làm môn học, học kỳ 261.
+Ghi chú, bài thực hành và đồ án các môn học chương trình thạc sĩ tại HCMUT.
 
 ## Cấu trúc
 
 ```
-notebooks/    bài thực hành theo buổi, đặt tên LXX_chu_de.ipynb
-notes/        ghi chú lý thuyết dạng markdown
-scripts/      code dùng lại được (hàm tiện ích, script chuẩn bị dữ liệu)
-data/raw/     dữ liệu gốc — KHÔNG commit, chỉ ghi nguồn trong data/README.md
-data/processed/  dữ liệu đã xử lý — KHÔNG commit
-assets/       hình ảnh chèn vào ghi chú
+<năm>-HK<n>/<mã-môn>/   mỗi môn một thư mục, có README, notes/, notebooks/, data/... riêng
+shared/                 tài nguyên dùng chung (template, .bib, utils)
 ```
 
-## Nhật ký buổi học
+Quy ước: dữ liệu thô và mô hình **không commit** (xem `.gitignore`), chỉ ghi nguồn trong `data/README.md` của từng môn.
 
-| Buổi | Chủ đề | Notebook | Ghi chú |
-|---|---|---|---|
-| L01 | | | |
-| L02 | | | |
-| L03 | Broadcasting, reshape/transpose, softmax | `notebooks/L03_numpy_broadcasting.ipynb` | `notes/L03.md` |
+## Danh sách môn
 
-## Bài tập lớn
-
-| Bài | Nội dung | Trạng thái |
+| Học kỳ | Môn | Thư mục |
 |---|---|---|
-| 1 | Dữ liệu bảng — dự đoán khách hàng rời bỏ | |
-| 2 | Văn bản — phân loại cảm xúc | |
+| 2026-HK1 (261) | Nền tảng lập trình cho phân tích và trực quan dữ liệu | [`2026-HK1/nentang-ptdl`](2026-HK1/nentang-ptdl) |
 
-## Môi trường
+## Repo riêng
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate        # Windows
-pip install -r requirements.txt
-```
+Luận văn và các đồ án nhóm hoặc đồ án lớn được để ở repo riêng:
+
+- [GPS-truck-tracking-project](https://github.com/kuromine19/GPS-truck-tracking-project)

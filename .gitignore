@@ -12,11 +12,12 @@ env/
 
 # ---- Dữ liệu ----
 # Không commit dữ liệu thô. Ghi nguồn tải trong data/README.md thay vì đẩy file lên.
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!data/README.md
+# Áp dụng cho data/ của mọi môn: <học kỳ>/<môn>/data/
+**/data/raw/*
+**/data/processed/*
+!**/data/raw/.gitkeep
+!**/data/processed/.gitkeep
+!**/data/README.md
 
 # File dữ liệu nặng ở bất kỳ đâu
 *.csv
@@ -47,6 +48,7 @@ secrets.yaml
 .vscode/
 *.swp
 .DS_Store
+__MACOSX/
 Thumbs.db
 desktop.ini
 
