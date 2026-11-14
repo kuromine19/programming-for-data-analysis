@@ -1,0 +1,3 @@
+# shared
+
+Tài nguyên dùng chung cho nhiều môn: template LaTeX/báo cáo, file `.bib`, hàm tiện ích Python, style biểu đồ...
